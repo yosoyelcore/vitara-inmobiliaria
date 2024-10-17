@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+<ifModule mod_headers.c>
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
+</IfModule>
