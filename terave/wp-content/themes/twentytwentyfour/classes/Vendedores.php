@@ -18,7 +18,7 @@ class Vendedores {
 
     // Método para obtener todos los vendedores
     public function get_all_vendedores() {
-        $tabla_vendedores = $this->wpdb->prefix . 'vendedores';
+        $tabla_vendedores = 'vendedores';
         $query = "SELECT * FROM $tabla_vendedores";
         $resultados = $this->wpdb->get_results($query);
         return $resultados;
@@ -26,7 +26,7 @@ class Vendedores {
 
     // Método para agregar un nuevo vendedor
     public function add_vendedor($nombre, $apellido, $telefono) {
-        $tabla_vendedores = $this->wpdb->prefix . 'vendedores';
+        $tabla_vendedores = 'vendedores';
         $this->wpdb->insert($tabla_vendedores, [
             'nombre' => $nombre,
             'apellido' => $apellido,
