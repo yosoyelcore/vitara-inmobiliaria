@@ -206,4 +206,6 @@ endif;
 add_action( 'init', 'twentytwentyfour_pattern_categories' );
 // En functions.php o en el archivo principal de tu plugin
 require_once get_template_directory() . '/classes/Vendedores.php';
+require_once get_template_directory() . '/classes/Clientes.php';
+require_once get_template_directory() . '/classes/Desarrollos.php';
 require_once get_template_directory() . '/definitions.php';
