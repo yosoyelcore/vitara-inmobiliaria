@@ -1,7 +1,17 @@
+# Ignore dependencies from npm and Composer:
 /node_modules
 /vendor
-/public
-.env
-.budfiles
-npm-debug.log
-yarn-error.log
+
+# Ignore generated JavaScript files:
+*.min.js
+
+# Ignore generated CSS files:
+style.css
+style-editor.css
+style-editor-extra.css
+
+# Ignore the generated zip file:
+terave.zip
+
+# Ignore .DS_Store files from macOS:
+.DS_Store

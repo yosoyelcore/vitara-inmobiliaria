@@ -1,54 +1,55 @@
-<p align="center">
-  <a href="https://roots.io/sage/">
-    <img alt="Sage" src="https://cdn.roots.io/app/uploads/logo-sage.svg" height="100">
-  </a>
-</p>
+Terave
+======
 
-<p align="center">
-  <a href="https://packagist.org/packages/roots/sage">
-    <img alt="Packagist Installs" src="https://img.shields.io/packagist/dt/roots/sage?label=projects%20created&colorB=2b3072&colorA=525ddc&style=flat-square">
-  </a>
+custom theme for Terave
 
-  <a href="https://github.com/roots/sage/actions/workflows/main.yml">
-    <img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/roots/sage/main.yml?branch=main&logo=github&label=CI&style=flat-square">
-  </a>
+## Quickstart
 
-  <a href="https://twitter.com/rootswp">
-    <img alt="Follow Roots" src="https://img.shields.io/badge/follow%20@rootswp-1da1f2?logo=twitter&logoColor=ffffff&message=&style=flat-square">
-  </a>
-</p>
+### Installation
 
-<p align="center">Advanced WordPress starter theme with Tailwind CSS and Laravel Blade</p>
+1. Move this folder to `wp-content/themes` in your local development environment
+2. Run `npm install && npm run dev` in this folder
+3. Activate this theme in your local WordPress installation
 
-<p align="center">
-  <a href="https://roots.io/sage/">Website</a> &nbsp;&nbsp; <a href="https://roots.io/sage/docs/installation/">Documentation</a> &nbsp;&nbsp; <a href="https://github.com/roots/sage/releases">Releases</a> &nbsp;&nbsp; <a href="https://discourse.roots.io/">Community</a>
-</p>
+### Development
 
-## Sponsors
+4. Run `npm run watch`
+5. Add [Tailwind utility classes](https://tailwindcss.com/docs/utility-first) with abandon
 
-Sage is an open source project and completely free to use. If you've benefited from our projects and would like to support our future endeavors, please consider [sponsoring Roots](https://github.com/sponsors/roots).
+### Deployment
 
-<div align="center">
-<a href="https://k-m.com/"><img src="https://cdn.roots.io/app/uploads/km-digital.svg" alt="KM Digital" width="120" height="90"></a> <a href="https://carrot.com/"><img src="https://cdn.roots.io/app/uploads/carrot.svg" alt="Carrot" width="120" height="90"></a> <a href="https://wordpress.com/"><img src="https://cdn.roots.io/app/uploads/wordpress.svg" alt="WordPress.com" width="120" height="90"></a> <a href="https://worksitesafety.ca/careers/"><img src="https://cdn.roots.io/app/uploads/worksite-safety.svg" alt="Worksite Safety" width="120" height="90"></a> <a href="https://www.copiadigital.com/"><img src="https://cdn.roots.io/app/uploads/copia-digital.svg" alt="Copia Digital" width="120" height="90"></a> <a href="https://www.freave.com/"><img src="https://cdn.roots.io/app/uploads/freave.svg" alt="Freave" width="120" height="90"></a> <a href="https://40q.agency/"><img src="https://cdn.roots.io/app/uploads/40q.svg" alt="40Q" width="120" height="90"></a>
-</div>
+6. Run `npm run bundle`
+7. Upload the resulting zip file to your site using the “Upload Theme” button on the “Add Themes” administration page
 
-## Overview
+Or [deploy with the tool of your choice](https://underscoretw.com/docs/deployment/#h-other-deployment-options)!
 
-Sage is a WordPress starter theme with block editor support.
+## Full Documentation
 
-- Harness the power of [Laravel](https://laravel.com) and its available packages thanks to [Acorn](https://github.com/roots/acorn)
-- Clean, efficient theme templating utilizing [Laravel Blade](https://laravel.com/docs/master/blade)
-- Modern frontend development workflow powered by [Bud](https://bud.js.org/)
-- Out of the box support for [Tailwind CSS](https://tailwindcss.com/)
+### Fundamentals
 
-## Getting Started
+* [Installation](https://underscoretw.com/docs/installation/)  
+  Generate your custom theme, install it in WordPress and run your first Tailwind builds
+* [Development](https://underscoretw.com/docs/development/)  
+  Watch for changes, build for production and learn more about how _tw, WordPress and Tailwind work together
+* [Deployment](https://underscoretw.com/docs/deployment/)  
+  Share your new WordPress theme with the world
+* [Troubleshooting](https://underscoretw.com/docs/troubleshooting/)  
+  Find solutions to potential issues and answers to frequently asked questions
 
-See the [Sage installation documentation](https://roots.io/sage/docs/installation/).
+### In Depth
 
-## Stay Connected
+* [Using Tailwind Typography](https://underscoretw.com/docs/tailwind-typography/)  
+  Customize front-end and back-end typographic styles
+* [JavaScript Bundling with esbuild](https://underscoretw.com/docs/esbuild/)  
+  Install and bundle JavaScript libraries (very quickly)
+* [Linting and Code Formatting](https://underscoretw.com/docs/linting-code-formatting/)  
+  Catch bugs and stop thinking about formatting
 
-- Join us on Discord by [sponsoring us on GitHub](https://github.com/sponsors/roots)
-- Participate on [Roots Discourse](https://discourse.roots.io/)
-- Follow [@rootswp on Twitter](https://twitter.com/rootswp)
-- Read the [Roots Blog](https://roots.io/blog/)
-- Subscribe to the [Roots Newsletter](https://roots.io/newsletter/)
+### Extras
+
+* [On Tailwind and WordPress](https://underscoretw.com/docs/wordpress-tailwind/)  
+  Understand how WordPress and Tailwind work together
+* [Managing Styles for Custom Blocks](https://underscoretw.com/docs/custom-blocks/)  
+  Learn strategies for using Tailwind in theme-specific custom blocks
+* [Setting Up Browsersync](https://underscoretw.com/docs/browsersync/)  
+  Add live reloads and synchronized cross-device testing to your workflow
