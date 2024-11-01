@@ -204,6 +204,26 @@ if ( ! function_exists( 'twentytwentyfour_pattern_categories' ) ) :
 endif;
 
 add_action( 'init', 'twentytwentyfour_pattern_categories' );
+
+add_action('wp_ajax_get_lotes_disponibles', 'get_lotes_disponibles');
+add_action('wp_ajax_nopriv_get_lotes_disponibles', 'get_lotes_disponibles');
+
+function get_lotes_disponibles() {
+    global $wpdb;
+    $desarrollo_id = intval($_POST['desarrollo_id']);
+
+    // Suponiendo que tienes una tabla de lotes
+    $tabla_lotes = 'lotes';
+    $query = $wpdb->prepare(
+        "SELECT * FROM $tabla_lotes WHERE desarrollo_id = %d AND lotes_utilizados < lotes_disponibles",
+        $desarrollo_id
+    );
+    $lotes = $wpdb->get_results($query);
+
+    echo json_encode($lotes);
+    wp_die(); // Finaliza la ejecución del script
+}
+
 // En functions.php o en el archivo principal de tu plugin
 require_once get_template_directory() . '/classes/Vendedores.php';
 require_once get_template_directory() . '/classes/Clientes.php';

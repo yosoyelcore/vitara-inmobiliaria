@@ -129,17 +129,6 @@ class Desarrollos {
 
         return ob_get_clean();
     }
-
-    // Método para obtener los lotes disponibles de un desarrollo
-    public function get_lotes_disponibles($desarrollo_id) {
-        $tabla_lotes = 'lotes';  // Asegúrate de que esta tabla exista
-        $query = $this->wpdb->prepare(
-            "SELECT * FROM $tabla_lotes WHERE desarrollo_id = %d AND lotes_utilizados < lotes_disponibles", 
-            $desarrollo_id
-        );
-        return $this->wpdb->get_results($query);
-    }
-
 }
 
 // Iniciar la clase

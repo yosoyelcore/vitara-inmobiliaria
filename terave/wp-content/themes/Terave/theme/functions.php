@@ -195,3 +195,7 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+require_once get_template_directory() . '/classes/Vendedores.php';
+require_once get_template_directory() . '/classes/Clientes.php';
+require_once get_template_directory() . '/classes/Desarrollos.php';
+require_once get_template_directory() . '/definitions.php';
